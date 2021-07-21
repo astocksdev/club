@@ -16,19 +16,37 @@ background-color: #f72585;
 color: white;
 }
 
-a {
-    text-decoration: none;
-    padding-right: 50px;
+nav {
+    overflow: hidden;
+  }
+
+  /* Navbar links */
+nav a {
+    float: left;
+    display: block;
     color: white;
-}
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
 
 img {
     height: auto;
     width: 500px;
+    margin-top: 50px;
 }
 
 .intro {
 text-align: center;
+padding: 50px 0;
 }
 
 .images {
@@ -36,4 +54,9 @@ text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.quote {
+    text-align: center;
+    background-color: #4361ee;
 }
